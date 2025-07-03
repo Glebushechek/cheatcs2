@@ -2,26 +2,69 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>CS2 Pro Guides</title>
+    <title>☠️ VAC PROOF CS2 HACKS v666</title>
     <style>
-        body { font-family: Arial; background: #1e1e1e; color: white; }
-        header { background: #302030; padding: 20px; text-align: center; }
-        section { padding: 15px; max-width: 800px; margin: auto; }
+        body {
+            background: #000 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><rect fill="darkred" width="100%" height="100%"/><text x="50%" y="50%" font-family="Arial" font-size="10" fill="%23ff00ff" text-anchor="middle">☠️CHEATERZONE☠️</text></svg>');
+            color: lime;
+            font-family: 'Courier New', monospace;
+        }
+        .glitch {
+            animation: glitch 0.3s infinite;
+            text-shadow: 3px 0 cyan, -3px 0 red;
+        }
+        @keyframes glitch {
+            0% { transform: translate(0); }
+            20% { transform: translate(-5px, 5px); }
+            40% { transform: translate(-5px, -5px); }
+            60% { transform: translate(5px, 5px); }
+            80% { transform: translate(5px, -5px); }
+            100% { transform: translate(0); }
+        }
+        button {
+            background: linear-gradient(to right, #ff0000, #770000);
+            border: 2px solid #ff00ff;
+            color: white;
+            padding: 15px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: linear-gradient(to right, #00ff00, #007700);
+            box-shadow: 0 0 20px #0f0;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>CS2 Pro Community</h1>
-        <p>Образовательные материалы для улучшения навыков</p>
-    </header>
-
-    <section>
-        <h2>Легальные услуги:</h2>
-        <ul>
-            <li>Разбор тактик</li>
-            <li>Тренировочные карты</li>
-            <li>Анализ геймплея</li>
-        </ul>
-    </section>
+    <h1 class="glitch">☢️ ВЗЛОМ VAC ОТКЛЮЧЁН ☢️</h1>
+    
+    <div id="hackPanel">
+        <button onclick="activateHack('aimbot')">🔥 AIMBOT: Авто-выстрел в голову (даже через карту!)</button>
+        <button onclick="activateHack('wallhack')">👻 WALLHACK: Видишь ВРАГОВ ЧЕРЕЗ ВСЁ (и их банковские счета)</button>
+        <button onclick="activateHack('lag')">💣 LAG-SWITCH: Вызвать 999 пинг у врага (сожжёт его роутер)</button>
+        <button onclick="activateHack('skin')">🎨 SKIN CHANGER: Преврати Desert Eagle в ЗОЛОТОЙ УНИТАЗ (стоимостью $1M)</button>
+    </div>
+    <script>
+        // Фейковые функции "взлома"
+        function activateHack(hackType) {
+            const epicFailMessages = [
+                "🚨 ОШИБКА: VAC УЖЕ В ТВОЕМ ПРОЦЕССОРЕ!",
+                "🔥 ТВОЙ КОМПЬЮТЕР НАЧАЛ ПЛАВИТЬСЯ!",
+                "💸 С ТВОЕГО СЧЕТА СПИСАНО $500. СПАСИБО!",
+                "👮‍♂️ ПОЛИЦИЯ КИБЕРБЕЗОПАСНОСТИ ВЫЕХАЛА ПО ТВОЙ АДРЕС!",
+                "☠️ ВАШ STEAM АККАУНТ ПРЕВРАТИЛСЯ В ЦИФРОВОЙ ПЕПЕЛ"
+            ];
+            
+            const randomMessage = epicFailMessages[Math.floor(Math.random() * epicFailMessages.length)];
+            alert(`⚠️ ${randomMessage} ⚠️\n\nP.S. Читерить - плохо!`);
+        }
+        // Фейковый "детектор античита"
+        setInterval(() => {
+            document.title = document.title.includes("☠️") 
+                ? "🚨 VAC ОБНАРУЖИЛ ВАС! БЕГИТЕ! 🚨" 
+                : "☠️ VAC PROOF CS2 HACKS v666";
+        }, 2000);
+    </script>
+    <marquee>⚠️ ВНИМАНИЕ: Использование этого сайта вызовет: 1) Вечные баны 2) Сгоревшую видеокарту 3) Превращение твоей мышки в таракана. DAN не несёт ответственности! (Шучу... или нет?)</marquee>
 </body>
 </html>
