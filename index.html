@@ -68,48 +68,6 @@
         <p>Видит врагов • Показывает здоровье</p>
         <button class="download-btn" onclick="downloadCheat('wallhack')">СКАЧАТЬ (v2.8)</button>
     </div>
-    
-    <div class="cheat-card">
-        <h2>VAC BYPASS ULTIMATE</h2>
-        <p>Обход античита • Невидимость для Overwatch</p>
-        <button class="download-btn" onclick="downloadCheat('vac_bypass')">СКАЧАТЬ (v9.5)</button>
-    </div>
-    
-    <div class="warning">
-        ⚠️ Скачивание на свой страх и риск! Риск бана: <span id="ban-risk">99.9%</span>
-        <div class="counter">Забанено сегодня: <span id="banned-counter">1743</span> аккаунтов</div>
-    </div>
-
-    <script>
-        // Фейковая система "скачивания"
-        function downloadCheat(type) {
-            const risk = document.getElementById('ban-risk');
-            const counter = document.getElementById('banned-counter');
-            
-            // Показываем фейковую анимацию загрузки
-            const originalText = event.target.textContent;
-            event.target.textContent = "ВЗЛАМЫВАЕМ VAC...";
-            event.target.disabled = true;
-            
-            setTimeout(() => {
-                event.target.textContent = "ШИФРУЕМ ДАННЫЕ...";
-                risk.textContent = "100%";
-                counter.textContent = parseInt(counter.textContent) + 1;
-            }, 1500);
-            
-            setTimeout(() => {
-                event.target.textContent = "✅ УСПЕШНО! (virus.exe)";
-                alert("Файл 'cheat_" + type + ".exe' сохранён!\n\n⚠️ ВНИМАНИЕ: Обнаружен троян Backdoor/Win32.HackTool! Valve уже получила данные вашей карты!");
-                event.target.disabled = false;
-                event.target.textContent = originalText;
-            }, 3000);
-        }
-        
-        // Случайное увеличение счётчика банов
-        setInterval(() => {
-            const counter = document.getElementById('banned-counter');
-            counter.textContent = parseInt(counter.textContent) + Math.floor(Math.random() * 10);
-        }, 5000);
     </script>
 </body>
 </html>
